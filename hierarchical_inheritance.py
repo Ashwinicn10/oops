@@ -44,14 +44,14 @@ class CurrentAccount(BankAccount):
             print("Overdraft limit exceeded")
 
 
-print("---- Savings Account ----")
+print("Savings Account")
 savings = SavingsAccount("Ashwini", 5000, 5)
 savings.deposit(1000)
 savings.add_interest()
 savings.withdraw(2000)
 savings.display_balance()
 
-print("\n---- Current Account ----")
+print("Current Account")
 current = CurrentAccount("Ashwini", 3000, 2000)
 current.withdraw_with_overdraft(4500)
 current.display_balance()
